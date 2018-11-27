@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Resume</title>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  
+  
+  <style>
+
+
+    .alert{
+      
+  text-align: center;
+  padding:10px;
+  background:#79c879;
+  color:#fff;
+  margin-bottom:10px;
+  display:none;
+
+    }
+
+        .alert-wrong{
+      
+  text-align: center;
+  padding:10px;
+  background:red;
+  color:white;
+  margin-bottom:10px;
+  display:none;
+
+    }
+  </style>
+  
+  
+  </head>
+  
+  
+  
+  
+  
+  
+  
+  <body>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="index.html">About</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="project.html">Project </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onlick = "">Contact</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+ <div class="container">
+     
+
+    
+        <h2>contact me</h2>
+         <br> <br>
+        <h4 >Hire me / Any Questions</h4>
+        <br> <br>
+       
+
+
+
+
+ <div class="alert">Your message has been sent</div>
+  <div class="alert-wrong">The input data was not correct</div>
+
+
+        
+            <div class="form-group animated flash">
+                
+
+                <div class="card-body">
+                    <input type="text" class="form-control" id="name" placeholder="Name" id='name' autofocus Required>
+                    <br>
+                    <input type="email" class="form-control" placeholder ="Email:sanjaykhanssk@gmail.com" id="email"Required>
+                    <br>
+                    <textarea id='message' class="form-control" placeholder="Message" id='message' Required></textarea>
+                    <br>
+                    <div class="d-flex justify-content-between align-items-center">
+
+                        <button type="submit" class="btn btn-outline-primary" id='submit' onclick="Send()">submit</button>
+
+                    </div>
+
+                
+            
+            </div>
+
+               </div>
+            <p>You can enter your data this trasfer that to my cloud and i will read and response to your maill id</p>
+        
+        
+        <div class='animated slideInDown'>
+         <a href="https://www.instagram.com/ssk161099/" title="Instagram" target="_blank"><i class="fa fa-instagram fa-2x"  aria-hidden="true"></i>
+</i></a>
+   
+
+ <a href="https://github.com/sanjaykhanssk" title="Github" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i> </a>
+
+ <a href="https://www.youtube.com/channel/UCK85RsoUMxac4DSFQ4OapCg" title="Youtube.com/History of bits" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a> 
+ <a href="https://sanjaykhanssk.wixsite.com/resume" title="Blog" target="_blank"><i class="fa fa-home fa-2x" aria-hidden="true"></i></i></a>      
+       
+    </div>    
+     
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA-w0s7K3O0TSUQhyWMcTH7dbJqv-uMhd8",
+    authDomain: "resume-5af5c.firebaseapp.com",
+    databaseURL: "https://resume-5af5c.firebaseio.com",
+    projectId: "resume-5af5c",
+    storageBucket: "resume-5af5c.appspot.com",
+    messagingSenderId: "802798542865"
+  };
+  firebase.initializeApp(config);
+
+</script>
+<script>
+
+ 
+
+
+
+</script>
+<script>
+
+        
+          var Send = function() {
+            var name = document.getElementById('name').value;   
+            var mail = document.getElementById('email').value;
+            var msg = document.getElementById('message').value;
+
+            if(name != '' && mail != '' && msg != '')
+{
+              var firebaseref = firebase.database().ref();
+              var msgRef = firebaseref.push() 
+              
+              msgRef.set({
+                name: name,
+                mail : mail,
+                message : msg
+              });             
+              
+              document.querySelector('.alert').style.display = 'block';
+
+
+        setTimeout(function(){
+          document.querySelector('.alert').style.display = 'none';
+      },3000);
+}
+              
+            else{
+               document.querySelector('.alert-wrong').style.display = 'block';
+        setTimeout(function(){
+          document.querySelector('.alert-wrong').style.display = 'none';
+      },3000);
+            }
+
+          };
+
+        </script>
+
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+ 
+  </body>
+</html>
