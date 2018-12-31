@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+   
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <title>Sanjay</title>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="container">
+                    <br>
+                    <br>
+
+            <div class="col-md-6-box animated fadeIn delay-2s ">
+                    <a href="index.html" class="btn btn-outline-primary" id="resumeGraphBtn" role="button" >Resume</a>
+            </div>
+
+        <canvas id="aboutMe">
+
+        </canvas>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <canvas id="Projects">
+                
+        </canvas>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <canvas id="Skills">
+
+        </canvas>
+
+    </div>
+
+    <script>
+
+
+
+        let aboutChart = document.getElementById('aboutMe').getContext('2d');
+
+
+        let aboutData = {
+            labels: ['Student', 'Programmer', 'Designer', 'Researcher', 'Story/Poet writer', 'Youtuber/Blogger', 'Learning Mat for AI'],
+            datasets: [{
+                label: 'Projects',
+                showInLegend: true,
+                data: [25, 60, 25, 17, 15, 5, 20],
+                
+                backgroundColor: ['#86FD9A','#DBFF9C','#6DF2FC','#F7F752','#52AAF7','#EC52F7','#F75273'],
+            }]
+        }
+        let displayAboutChart = new Chart(aboutChart,
+            {
+                	animationEnabled: true,
+
+                type: 'pie',
+                data: aboutData,
+
+                options: {
+                    title: {
+                        display: true,
+                        text: "About Me",
+                        fontSize: 25,
+                    },
+
+                    legend: {
+                        position: 'right'
+
+                    },
+
+                }
+            })
+
+
+            let projectChart = document.getElementById('Projects').getContext('2d');
+            let projectData = {
+            labels: ['Simple Python', 'Electron Js', 'kotlin', 'Web Development', 'Django', 'Web Scraping', 'Data Science'],
+            datasets: [{
+                label: 'Projects',
+                data: [10, 3, 1, 6, 2, 4, 2],
+                backgroundColor: '#86FD9A',
+            }]
+        }
+
+        let displayProjectChart = new Chart(projectChart,
+            {
+                type: 'bar',
+                data: projectData,
+
+                options: {
+                    title: {
+                        display: true,
+                        text: "List Of Project",
+                        fontSize: 25,
+                    },
+
+                    legend: {
+                        position: 'right'
+
+                    },
+                    scales: {
+                        yAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Number of Projects'
+                            }
+                        }],
+                        xAxes: [{
+                            scaleLabel: {
+                                display: true,
+                                labelString: 'Types of Languages and Fields'
+                            }
+                        }]
+                    }
+                }
+            })
+
+
+
+            let skillsChart = document.getElementById('Skills').getContext('2d');
+            let skillsData = {
+            labels: ['Python','Problem Solving','Algorithms', 'Js', 'Kotlin', 'C++', 'Django', 'Animation / Design', 'Data Science','Linux'],
+            datasets: [{
+                label: 'Skills',
+                data: [80,75, 45,70, 30, 60, 50, 40, 40,45],
+                backgroundColor: 'rgba(132,115,243,0.4)',
+                borderWidth:0.2,
+                borderColor:'red'
+            }]
+        }
+
+            let displaySkillsChart = new Chart(skillsChart,
+            {
+                type: 'radar',
+                data: skillsData,
+
+                options: {
+                    title: {
+                        display: true,
+                        text: "Types of Skils",
+                        fontSize: 25,
+                    },
+
+                    legend: {
+                        position: 'right'
+
+                    },
+
+                },
+                
+            })
+
+
+    </script>
+</body>
+
+</html>
