@@ -1,0 +1,68 @@
+
+
+
+
+.qoute{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border:solid rgba(16,150,200,0.3);
+  border-radius: 40px;
+  top:50%;
+  left:50%;
+  padding: 20px;
+  padding-left: 80px;
+overflow: hidden;
+float: left;
+  display: flex;
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+
+}
+.sshow {
+  /* background: rgba(253, 7, 188,.2); */
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+top:30%;
+
+}
+.swiper-container {
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 30px;
+}
+.swiper-slide {
+    background:#fff;
+
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+}
+.swiper-slide .imgBx{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.swiper-slide .imgBx iframe{
+    width: 100%;
+}
+.swiper-slide .imgBx img{
+  width: 100%;
+}
+.swiper-slide .details h3{
+box-sizing: border-box;
+font-size: 20px;
+padding: 20px;
+text-align: center;
+line-height: 20px;
+}
+.swiper-slide .details h3 span{
+  padding-top:20px;
+font-size: 16;
+color:rgb(53, 126, 235);
+    }
+    
+    .swiper-slide .details p{
+      text-align: center;
+      color: firebrick;
+    }

@@ -1,0 +1,157 @@
+
+#social-media-mobile{
+    visibility: hidden;
+}
+@media only screen and (max-width: 1026px) {
+    #social-media {
+        display: none;
+    }
+    #social-media-mobile{
+        visibility: visible;
+    }
+  }
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.cb{
+    padding-top:50px; 
+    top:50%;
+    left:50%;
+    text-align: center;
+
+
+}
+
+
+.social-media{
+    margin: 0;
+    padding: 0;
+    /* background: #ccc; */
+    padding-top: 30px;
+}
+.social-media ul{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.social-media ul li{
+    list-style: none;
+    margin: 0 80px;
+}
+.social-media ul li a .fab{
+    font-size: 50px;
+    color: #262626;
+    line-height: 80px;
+    transition: .5s;
+}
+.social-media ul li a {
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
+    transition: .5s;
+    box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+.social-media ul li a::before{
+    content: '';
+    position: absolute;
+    top:10px;
+    left:-20px;
+    height: 100%;
+    width: 20px;
+    background:#b1b1b1;
+    transition: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+.social-media ul li a::after{
+    content: '';
+    position: absolute;
+    bottom:-20px;
+    left:-10px;
+    height: 20px;
+    width: 100%;
+    background:#b1b1b1;
+    transition: .5s;
+    transform: rotate(0deg) skewx(-45deg);
+}
+
+.social-media ul li a:hover{
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
+    box-shadow: -50px 50px 10px rgba(75, 37, 73, 0.5);
+
+}
+.social-media ul li:hover .fab{
+    color:white;
+}
+
+.social-media ul li:hover:nth-child(1) a{
+    background:#0077B5;
+}
+.social-media ul li:hover:nth-child(1) a::before{
+    background:#0077B5;
+}
+.social-media ul li:hover:nth-child(1) a::after{
+    background:rgb(56, 137, 180);
+}
+
+
+.social-media ul li:hover:nth-child(2) a{
+    background:#3b5999;
+}
+.social-media ul li:hover:nth-child(2) a::before{
+    background:#3b5999;
+}
+.social-media ul li:hover:nth-child(2) a::after{
+    background:#46619b;
+}
+
+
+
+.social-media ul li:hover:nth-child(3) a{
+    background:#161e24;
+}
+.social-media ul li:hover:nth-child(3) a::before{
+    background:#192229;
+}
+.social-media ul li:hover:nth-child(3) a::after{
+    background:#17242e;
+}
+
+
+.social-media ul li:hover:nth-child(4) a{
+    background:#cd201f;
+}
+.social-media ul li:hover:nth-child(4) a::before{
+    background:#a01919;
+}
+.social-media ul li:hover:nth-child(4) a::after{
+    background:#c93a3a;
+}
+
+
+.social-media ul li:hover:nth-child(5) a{
+    background:#e4405f;
+}
+.social-media ul li:hover:nth-child(5) a::before{
+    background:#e4405f;
+}
+.social-media ul li:hover:nth-child(5) a::after{
+    background:#e2647b;
+}
+
+
+.cm{
+    text-align: center;
+}
