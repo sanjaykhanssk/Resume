@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sanjay.S</title>
+    <link rel="icon" type="image/ico" href="https://avatars3.githubusercontent.com/u/29035533?s=460&v=4" />
+    <!-- Styles and CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
+
+    <!-- UIkit JS -->   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/js/uikit-icons.min.js"></script>
+   
+    <!-- UIkit icons -->
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+</head>
+<body class = "container">
+
+
+    <!-- main div -->
+    <div class="uk-container uk-container-small uk-position-relative">
+
+        <!-- Left side starts -->
+        <div class="uk-align-left">
+            <!-- Profile image -->
+            <div class="uk-card  uk-card-body">
+                <img src="https://avatars3.githubusercontent.com/u/29035533?s=460&v=4" style="border-radius: 5px;" width="100">
+                <h2 class="uk-card-title uk-text-bold ">Sanjay S</h2>
+                <p  class="uk-text-small" >@sanjaykhanssk</p>
+                <a href="https://github.com/sanjaykhanssk" target="blank"   uk-tooltip="Github"  uk-icon="icon: github ; ratio:1" style="padding-right:5px"></a>
+                <a href="https://in.linkedin.com/in/sanjaykhanssk" target="blank"  uk-tooltip="Linkedin"  uk-icon="icon: linkedin; ratio:1" style="padding-right:5px"></a>
+                <a href="https://instagram.com/sanjay161099" target="blank" uk-tooltip="Instagram"  uk-icon="icon: instagram;ratio:1" style="padding-right:5px"></a>
+                <a href="https://hackerrank.com/sanjaykhanssk" target="blank" uk-tooltip="Hackerrank"  uk-icon="icon: more;ratio:1" style="padding-right:5px"></a>
+            </div>
+            <hr class="uk-divider-icon">
+            <!-- Profile About -->
+            <div class="uk-card  uk-card-body uk-card-hover">
+                <h2 class="uk-card-title uk-text-bold">About</h2>
+                <p class="uk-text-small">Hi! i'm sanjay,I loves to code</p>
+                <hr class="uk-divider-small">
+                <p class=".uk-text-emphasis" style="font-size:15px;"> Expected year of Graduation </p>
+                <p class="uk-text-small uk-text-bold">2020</p>
+                <hr class="uk-divider-small">
+                <p class=".uk-text-emphasis"> Education </p>
+                <p class="uk-text-small">B.E:CSE</p>
+                <p class="uk-text-small uk-text-bold">Karpagam University</p>
+                <hr class="uk-divider-small">
+                <p class=".uk-text-emphasis"> Location </p>
+                <p class="uk-text-small uk-text-bold">Coimbatore , India</p>
+
+            </div>
+
+
+        </div>
+        <!-- left side ends -->
+        <div class="uk-grid-collapse  uk-margin" uk-grid>
+
+        <div class="uk-card uk-card-body uk-card-hover uk-margin-small-bottom">
+                        <h3 class="uk-card-title ">Sanjaykhanssk</h3>
+                        <hr class="uk-divider-icon">
+
+                        <p>Hi i'm sanjay , who loves to code and loves to learn more about technology , This world is moving towards data-driven things(AI).
+                            Human life is very complicated that's what we need right , then only we can learn new things.<br>
+                            search me on web <a class="uk-button uk-button-text" style="color:blue;" href="https://duckduckgo.com/?q=sanjaykhanssk&t=h_&ia=software" target="blank">'sanjaykhanssk'</a>
+                        </p>
+        </div>
+
+        <hr class="uk-divider-icon uk-margin-small-bottom">
+<!-- skills dev -->
+            <div class="uk-card uk-card-large uk-card-body uk-card-hover">
+                <h3 class="uk-card-title ">Skills</h3>
+                <hr class="uk-divider-small">
+
+                <ul >
+                    <li>
+                        <h4>Data Science</h4>
+                        <hr class="uk-divider-small">
+
+                    </li>
+                    <li >
+                            <h4>Application Development</h4>
+                            <hr class="uk-divider-small">
+
+                    <li>
+                        <h4>UI Design</h4>
+                        <hr class="uk-divider-small">
+
+                    </li>
+                </ul>
+            </div>
+
+
+<!-- Projects -->
+<div class="uk-card uk-card-large uk-card-body uk-card-hover">
+    <h3 class="uk-card-title ">Projects</h3>
+    <hr class="uk-divider-small">
+    <div uk-filter="target: .js-filter">
+
+        <ul class="uk-subnav uk-subnav-pill">
+            <li uk-filter-control=".tag-python"><a href="#">Python</a></li>
+            <li uk-filter-control=".tag-js"><a href="#">JS</a></li>
+            <li uk-filter-control=".tag-ds"><a href="#">Data science</a></li>
+            <li uk-filter-control=".tag-all"><a href="#">All</a></li>
+        </ul>
+
+
+        <ul class="js-filter uk-list" uk-accordion>
+
+                <li class="uk-open tag-python tag-all">
+                    <a class="uk-accordion-title " href="#">Niku 1.0   </a> 
+                    <hr class="uk-divider-small">
+
+                    <div class="uk-accordion-content ">
+                        <p style="color: goldenrod">Linux Assistant</p> 
+                        <p>It's a next version of voice control desktop project , But in this version i have added lot more features  , and now we can control our desktop from anywhere Internet over webpage / Android App</p>
+                        <a class="uk-button uk-button-secondary" href="https://github.com/sanjaykhanssk/Niku-1.0" target="blank">More on Github</a>
+                        <a class="uk-button uk-button-danger" href="https://www.youtube.com/watch?v=r5rgD769N0s" target="blank">Demo Video</a>
+
+                    </div>
+                </li>
+
+                <li class="uk-open tag-python tag-ds tag-all">
+                    <a class="uk-accordion-title " href="#">Shopping Assistant with DrQA</a>
+                    <hr class="uk-divider-small">
+
+                    <div class="uk-accordion-content ">
+                        <p style="color: goldenrod">Flipkart AI Shopping Assistant with DrQA</p> 
+                        <p>It's the next version of Bukku the flipkart AI Assistant , where the aim is to add some intractive QA about the specific product the user needs to buy</p>
+                        <a class="uk-button uk-button-secondary" href="https://github.com/sanjaykhanssk/Buticku" target="blank">More on Github</a>
+                        <a class="uk-button uk-button-danger" href="https://www.youtube.com/watch?v=hh9rDJql8qg" target="blank">Demo Video</a>
+
+                    </div>
+                </li>
+                <li class="uk-open tag-python  tag-ds tag-all">
+                        <a class="uk-accordion-title " href="#">Flpikart Shopping Assistant</a>
+                        <hr class="uk-divider-small">
+
+                        <div class="uk-accordion-content ">
+                            <p style="color: goldenrod">First DeepLearning/Data-science Project</p> 
+                            <p>It's just Classifier AI that uses webscrapping to scrap the review from Flpikart product and classify things and vizulize the Bar Chart</p>
+                            <a class="uk-button uk-button-secondary" href="https://github.com/sanjaykhanssk/Bukku" target="blank">More on Github</a>
+                            <a class="uk-button uk-button-danger" href="https://www.youtube.com/watch?v=drWkFoEoj6o" target="blank">Demo Video</a>
+
+                        </div>
+                    </li>
+                <li class="uk-open tag-js tag-all">
+                        <a class="uk-accordion-title " href="#">Voice control Website</a>
+                        <hr class="uk-divider-small">
+
+                        <div class="uk-accordion-content ">
+                            <p style="color: goldenrod">Now Control your website with Voices</p> 
+                            <p>It's just a process of implementing the chrome web speech API , and just take the website as full of voice control</p>
+                            <a class="uk-button uk-button-secondary" href="https://github.com/sanjaykhanssk/Niku-Web" target="blank">More on Github</a>
+                            <a class="uk-button uk-button-danger" href="https://www.youtube.com/watch?v=mchXgpL_5gM" target="blank">Demo Video</a>
+
+                        </div>
+                </li>
+
+                <li class="uk-open tag-python tag-all">
+                        <a class="uk-accordion-title " href="#">Voice control Desktop</a>
+                        <hr class="uk-divider-small">
+
+                        <div class="uk-accordion-content ">
+                            <p style="color: goldenrod">Now Control your Desktop with Voices</p> 
+                            <p>My first project , It's Developed in Python Speech API and PyAutoGui the next version is available "Niku 1.0"</p>
+                            <a class="uk-button uk-button-secondary" href="https://github.com/sanjaykhanssk/Niku-voice-control-desktop-niku0.0-" target="blank">More on Github</a>
+
+                        </div>
+                </li>
+        </ul>
+    
+    </div>
+</div>
+
+<!--  -->
+
+<!-- Languages -->
+<div class="uk-card uk-margin-medium-right uk-card-body uk-card-hover " >
+    <h3 class="uk-card-title ">Languages</h3>
+    <hr class="uk-divider-small">
+
+    <ul uk-accordion>
+        <li class="uk-open">
+            <a class="uk-accordion-title" href="#">Python</a>
+            <hr class="uk-divider-small">
+
+            <div class="uk-accordion-content">
+                <p style="color: goldenrod">Golden Level in Hackerrank ,</p> <p> I did Most of my projects in python.In 2017 i just started with Python 
+                    which is quite easy syntax , so it took only few days to learn Python , But there are lot things that python is used for , always a learner but good at it. 
+                </p>
+            </div>
+        </li>
+        <li>
+            <a class="uk-accordion-title" href="#">C++</a>
+            <hr class="uk-divider-small">
+
+            <div class="uk-accordion-content">
+                <p style="color:goldenrod">Silver level in Hackerrank</p> <p>I learned this super-fast language in my Higher Studies and did few projects on it ,Using this language for competitive programming and learning more on it. </p>
+            </div>
+        </li>
+        <li>
+            <a class="uk-accordion-title" href="#">HTML/JS</a>
+            <hr class="uk-divider-small">
+
+            <div class="uk-accordion-content">
+                <p style="color: goldenrod">Modern day Maharaja</p>
+                <p>HTML-5 and JS are most trolled language in the social media but it's the most used Language(scrpiting) in this era , Basic of HTML/JS and still i can manage and create some webpage/websites</p>
+                
+            </div>
+        </li>
+        <li>
+            <!-- frameworks starts -->
+            <a class="uk-accordion-title" href="#">Frameworks</a>
+            <hr class="uk-divider-small">
+
+            <div class="uk-accordion-content">
+
+            <ul uk-accordion>
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#">Pytorch</a>
+                        <hr class="uk-divider-small">
+
+                        <div class="uk-accordion-content">
+                            <p style="color: goldenrod">Deep Learning</p> 
+                            <p>Pytorch is super simple for,I just entered to DeepLearning in 2019 , But i created very few Projects in it </p>
+                            
+                        </div>
+                    </li>
+
+                    <li >
+                            <a class="uk-accordion-title" href="#">Some Data Science Frameworks</a>
+                            <hr class="uk-divider-small">
+
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list uk-list-divider">
+                                    <li>
+                                        Pandas -> Data Pre processing
+                                    </li>
+                                    <li>
+                                        Bokeh & Matplotlib ->Data Visualization
+                                    </li>
+                                    <li>
+                                        TextBlob & Spacy -> Natural Language Processing
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+            </ul>
+            </div>
+        </li>
+<!-- frameworks ends -->
+    </ul>
+    <!-- this div ends with next line -->
+</div>
+
+
+<!--  -->
+<!-- Others -->
+<div class="uk-card uk-card-large uk-margin-medium uk-card-body uk-card-hover">
+    <h3 class="uk-card-title ">Others</h3>
+    <hr class="uk-divider-small">
+
+    <ul uk-accordion>
+        <li class="uk-open">
+            <a class="uk-accordion-title" href="#">Ongoing</a>
+            <hr class="uk-divider-small">
+
+            <div class="uk-accordion-content">
+                <p style="color:blue">Data Structures and Algorithm</p>
+                <p style="color:blue">Competitive Programming</p>
+                <p style="color:blue">DBMS</p>
+            </div>
+        </li>
+        <li>
+            <a class="uk-accordion-title" href="#">Ideas</a>
+            <hr class="uk-divider-small">
+
+            <div class="uk-accordion-content">
+                    <ul uk-accordion>
+                            <li class="uk-open">
+                                <a class="uk-accordion-title" href="#">N! - End to End Booking App</a>
+                                <div class="uk-accordion-content">
+                                    <p style="color:green">A booking App/Web used for multipurpose Booking Process</p>
+ 
+                                </div>
+                            </li>
+                    </ul>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<!--  -->
+
+<!-- Contact -->
+        <!-- <div class="uk-form" >
+                <h3 class="uk-card-title ">Contact</h3>
+                <hr class="uk-divider-small">
+    
+                <div class="uk-alert-success" style="display: block;">Your message has been sent</div>
+                <div class="uk-alert-danger	"style="display: block;">The input data was not correct</div>
+    
+    
+    
+            <form>
+    
+                    <div class="uk-margin">
+                        <input class="uk-input uk-form-width-large" id="name" type="text" placeholder="Name">
+                    </div>
+                
+                    <div class="uk-margin">
+                        <input class="uk-input uk-form-width-large" id="email" type="email" placeholder="Email">
+                    </div>
+                
+                    <div class="uk-margin">
+                        <input class="uk-input uk-form-width-large" id="message"type="text" placeholder="message">
+                    </div>
+                    <button class="uk-button uk-button-secondary" onclick="Send()" target="blank">Send</button>
+    
+               
+                </form>
+    
+    </div> -->
+
+
+<!--  -->
+
+
+</div>
+
+<!-- final div closes -->
+    </div>
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA-w0s7K3O0TSUQhyWMcTH7dbJqv-uMhd8",
+        authDomain: "resume-5af5c.firebaseapp.com",
+        databaseURL: "https://resume-5af5c.firebaseio.com",
+        projectId: "resume-5af5c",
+        storageBucket: "resume-5af5c.appspot.com",
+        messagingSenderId: "802798542865"
+      };
+      firebase.initializeApp(config);
+    
+    </script>
+    <script>
+    
+     
+    
+    
+    
+    </script>
+    <script>
+    
+            
+              var Send = function() {
+                var name = document.getElementById('name').value;   
+                var mail = document.getElementById('email').value;
+                var msg = document.getElementById('message').value;
+    
+                if(name != '' && mail != '' && msg != '')
+    {
+                  var firebaseref = firebase.database().ref();
+                  var msgRef = firebaseref.push() 
+                  
+                  msgRef.set({
+                    name: name,
+                    mail : mail,
+                    message : msg
+                  });             
+                  
+                  document.querySelector('.uk-alert-success	').style.display = 'block';
+    
+    
+            setTimeout(function(){
+              document.querySelector('.uk-alert-success	').style.display = 'none';
+          },3000);
+    }
+                  
+                else{
+                   document.querySelector('.uk-alert-danger	').style.display = 'block';
+            setTimeout(function(){
+              document.querySelector('.uk-alert-danger	').style.display = 'none';
+          },3000);
+                }
+    
+              };
+    
+            </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+     
+</body>
+</html>
